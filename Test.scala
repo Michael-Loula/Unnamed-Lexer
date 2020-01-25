@@ -108,8 +108,6 @@ object Test {
   def main(arg: Array[String]) {
     val S = "xxyy * xyx"
     val lex = new Lexer(S)
-    println(lex.next().getLexeme)
-    println(lex.next().getLexeme)
-    println(lex.next().getLexeme)
+    for ( i <- 1 to 3) println(lex.next().getLexeme)
   }
 }
